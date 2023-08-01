@@ -1,0 +1,33 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Concerns\HasUuids;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class DownloadStatus extends Model
+{
+    use HasFactory;
+
+    protected $table = 'files_download';
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
+    protected $fillable = [
+        'file_id',
+        'status',
+        'progress',
+        'messsage',
+        'job_id',
+    ];
+
+    public function file()
+    {
+        return $this->belongsTo(File::class, 'file_id', 'id');
+    }
+
+}
