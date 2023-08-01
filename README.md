@@ -2,9 +2,7 @@
 # zConverter
 A video converter made with Laravel, VueJs, Tailwind and Soketi due to study.
 
-
-https://github.com/KayckMatias/zconverter/assets/48569093/99cd7eb2-a5be-4563-b892-5de04f56cbd0
-
+https://github.com/KayckMatias/zconverter/assets/48569093/a7188ab5-b8c9-4ebc-ae82-ecb3e3e9627f
 
 ## Prerequisites
 
